@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="../assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="../assets/vendor/simple-datatables/style.css" rel="stylesheet">
+    <style>
+        ::-webkit-scrollbar {
+            display: none;
+            width: 0px;
+            background: rgb(235, 234, 234);
+        }
+
+        body {
+            min-height: 100%;
+            margin-bottom: 705px;
+            padding-bottom: 200px;
+            background: rgb(235, 234, 234);
+        }
+
+        form input:focus {
+            border: none !important;
+            outline: none !important;
+        }
+
+        form input {
+            outline: none;
+        }
+
+        #courses::-webkit-scrollbar {
+            width: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid" style="min-height: 100%; background: rgb(235, 234, 234); position: absolute;">
+        <div class="row p-2" style=" height: 100px; overflow: hidden;">
+            <div class="mt-3" style="width: 230px !important;">
+                <div class="row">
+                    <h1>Hi,<span>User</span></h1>
+                    <!-- <h6 style="color: gray;">Great Day! What would you like to learn today?</h6> -->
+                </div>
+            </div>
+            <div class="col p-2" style="display: flex; justify-content: center; align-items: center;">
+                <div class="bg-primary"
+                    style="height: 50px; width: 50px; display: flex; justify-content: center; align-items: center; border-radius: 50%; overflow: hidden;">
+                    <img src="" alt="" style="height: 100%; width: 100%;">
+                </div>
+            </div>
+        </div>
+
+        <!-- search start here -->
+        <div class="row">
+            <form action="" method="post" class="mt-1">
+                <div class="input-group mb-3 p-3" style="background-color: white; border-radius: 18px;">
+                    <input type="text" class="form-control" placeholder="Search Products"
+                        aria-label="Recipient's username" aria-describedby="button-addon2"
+                        style="border:none;border-radius: 12px; outline: none;">
+                    <button class="btn btn-primary ms-2" type="button" id="button-addon2"
+                        style="border-radius: 50%; width: 36px; display: flex; justify-content: center; align-items: center;"><ion-icon
+                            name="search-outline"></ion-icon></button>
+                </div>
+            </form>
+        </div>
+
+        <!-- courses start here -->
+
+
+        <!-- carousel start here -->
+        <div class="row p-1">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel"
+                style="height: 60px; border-radius: 10px;">
+                <div class="carousel-inner" style="border-radius: 8px;">
+                    <div class="carousel-item active" style="height: 60px;">
+                        <img src="../images/apple.png" class="d-block w-100" alt="..." style="height: 100%;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item active" style="height: 60px;">
+                        <img src="../images/asus.png" class="d-block w-100" alt="..." style="height: 100%;">
+                    </div>
+                    <div class="carousel-item active" style="height: 60px;">
+                        <img src="../images/mi.png" class="d-block w-100" alt="..." style="height: 100%;">
+                    </div>
+                    <div class="carousel-item active" style="height: 60px;">
+                        <img src="../images/nokia.png" class="d-block w-100" alt="..." style="height: 100%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- products start here -->
+        <div class="row p-2"
+            style="display: grid; grid-template-columns: 170px 170px; width: 360px !important; justify-content: center; align-items: center; grid-gap: 2px;">
+
+
+            <div class="bg-light products" style="height: 230px; border: 1px solid white; border-radius: 5px;">
+                <div class="row" style="height: 150px;">
+                    <img src="../images/apple phone.jpeg" alt="" class="d-block w-100">
+                </div>
+                <div class="row text">
+                    <div class="bg-primary ms-3 mt-2 rounded start" style="width: 70px;">
+                        <ion-icon name="star"></ion-icon> <span>5.0</span>
+                    </div>
+                    <div class="fw-bold title">
+                        Apple Iphone 13
+                    </div>
+                    <div class="fw-bold price">
+                        ₹ <span>120000</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="bg-light products" style="height: 230px; border: 1px solid white; border-radius: 5px;">
+                <div class="row" style="height: 150px;">
+                    <img src="../images/iqoo 5g.jpeg" alt="" class="d-block w-100">
+                </div>
+                <div class="row text">
+                    <div class="bg-primary ms-3 mt-2 rounded start" style="width: 70px;">
+                        <ion-icon name="star"></ion-icon> <span>5.0</span>
+                    </div>
+                    <div class="fw-bold title">
+                        iQOO 5G
+                    </div>
+                    <div class="fw-bold price">
+                        ₹ <span>120000</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="bg-light products" style="height: 230px; border: 1px solid white; border-radius: 5px;">
+                <div class="row" style="height: 150px;">
+                    <img src="../images/vivi v29.png" alt="" class="d-block w-100">
+                </div>
+                <div class="row text">
+                    <div class="bg-primary ms-3 mt-2 rounded start" style="width: 70px;">
+                        <ion-icon name="star"></ion-icon> <span>5.0</span>
+                    </div>
+                    <div class="fw-bold title">
+                        Vivo v29
+                    </div>
+                    <div class="fw-bold price">
+                        ₹ <span>120000</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="bg-light products" style="height: 230px; border: 1px solid white; border-radius: 5px;">
+                <div class="row" style="height: 150px;">
+                    <img src="../images/realme-11 5g.jpg" alt="" class="d-block w-100">
+                </div>
+                <div class="row text">
+                    <div class="bg-primary ms-3 mt-2 rounded start" style="width: 70px;">
+                        <ion-icon name="star"></ion-icon> <span>5.0</span>
+                    </div>
+                    <div class="fw-bold title">
+                        Apple Iphone 13
+                    </div>
+                    <div class="fw-bold price">
+                        ₹ <span>120000</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="bg-light products" style="height: 230px; border: 1px solid white; border-radius: 5px;">
+                <div class="row" style="height: 150px;">
+                    <img src="../images/realme 10" alt="" class="d-block w-100">
+                </div>
+                <div class="row text">
+                    <div class="bg-primary ms-3 mt-2 rounded start" style="width: 70px;">
+                        <ion-icon name="star"></ion-icon> <span>5.0</span>
+                    </div>
+                    <div class="fw-bold title">
+                        Apple Iphone 13
+                    </div>
+                    <div class="fw-bold price">
+                        ₹ <span>120000</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="bg-light products" style="height: 230px; border: 1px solid white; border-radius: 5px;">
+                <div class="row" style="height: 150px;">
+                    <img src="../images/apple phone.jpeg" alt="" class="d-block w-100">
+                </div>
+                <div class="row text">
+                    <div class="bg-primary ms-3 mt-2 rounded start" style="width: 70px;">
+                        <ion-icon name="star"></ion-icon> <span>5.0</span>
+                    </div>
+                    <div class="fw-bold title">
+                        Apple Iphone 13
+                    </div>
+                    <div class="fw-bold price">
+                        ₹ <span>120000</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="bg-light products" style="height: 230px; border: 1px solid white; border-radius: 5px;">
+                <div class="row" style="height: 150px;">
+                    <img src="../images/apple phone.jpeg" alt="" class="d-block w-100">
+                </div>
+                <div class="row text">
+                    <div class="bg-primary ms-3 mt-2 rounded start" style="width: 70px;">
+                        <ion-icon name="star"></ion-icon> <span>5.0</span>
+                    </div>
+                    <div class="fw-bold title">
+                        Apple Iphone 13
+                    </div>
+                    <div class="fw-bold price">
+                        ₹ <span>120000</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="bg-light products" style="height: 230px; border: 1px solid white; border-radius: 5px;">
+                <div class="row" style="height: 150px;">
+                    <img src="../images/apple phone.jpeg" alt="" class="d-block w-100">
+                </div>
+                <div class="row text">
+                    <div class="bg-primary ms-3 mt-2 rounded start" style="width: 70px;">
+                        <ion-icon name="star"></ion-icon> <span>5.0</span>
+                    </div>
+                    <div class="fw-bold title">
+                        Apple Iphone 13
+                    </div>
+                    <div class="fw-bold price">
+                        ₹ <span>120000</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="bg-light products" style="height: 230px; border: 1px solid white; border-radius: 5px;">
+                <div class="row" style="height: 150px;">
+                    <img src="../images/apple phone.jpeg" alt="" class="d-block w-100">
+                </div>
+                <div class="row text">
+                    <div class="bg-primary ms-3 mt-2 rounded start" style="width: 70px;">
+                        <ion-icon name="star"></ion-icon> <span>5.0</span>
+                    </div>
+                    <div class="fw-bold title">
+                        Apple Iphone 13
+                    </div>
+                    <div class="fw-bold price">
+                        ₹ <span>120000</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="bg-light products" style="height: 230px; border: 1px solid white; border-radius: 5px;">
+                <div class="row" style="height: 150px;">
+                    <img src="../images/apple phone.jpeg" alt="" class="d-block w-100">
+                </div>
+                <div class="row text">
+                    <div class="bg-primary ms-3 mt-2 rounded start" style="width: 70px;">
+                        <ion-icon name="star"></ion-icon> <span>5.0</span>
+                    </div>
+                    <div class="fw-bold title">
+                        Apple Iphone 13
+                    </div>
+                    <div class="fw-bold price">
+                        ₹ <span>120000</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="bg-light products" style="height: 230px; border: 1px solid white; border-radius: 5px;">
+                <div class="row" style="height: 150px;">
+                    <img src="../images/apple phone.jpeg" alt="" class="d-block w-100">
+                </div>
+                <div class="row text">
+                    <div class="bg-primary ms-3 mt-2 rounded start" style="width: 70px;">
+                        <ion-icon name="star"></ion-icon> <span>5.0</span>
+                    </div>
+                    <div class="fw-bold title">
+                        Apple Iphone 13
+                    </div>
+                    <div class="fw-bold price">
+                        ₹ <span>120000</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="bg-light products" style="height: 230px; border: 1px solid white; border-radius: 5px;">
+                <div class="row" style="height: 150px;">
+                    <img src="../images/apple phone.jpeg" alt="" class="d-block w-100">
+                </div>
+                <div class="row text">
+                    <div class="bg-primary ms-3 mt-2 rounded start" style="width: 70px;">
+                        <ion-icon name="star"></ion-icon> <span>5.0</span>
+                    </div>
+                    <div class="fw-bold title">
+                        Apple Iphone 13
+                    </div>
+                    <div class="fw-bold price">
+                        ₹ <span>120000</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+        <!-- footer navbar start here -->
+
+
+        <div class="row p-3"
+            style="background-color: rgb(243, 243, 243); position: fixed; margin-top: 100px; display: flex; justify-content: center; align-items: center; z-index: 300;bottom: 0; width: 100%; border-bottom-left-radius: 29px;">
+            <div class="row" style="width: 100%; display: flex; justify-content: center; align-items: center;">
+                <div class="col"
+                    style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                    <ion-icon name="home-outline" class="fs-2"></ion-icon>
+                    <span style="font-size: 13px; font-weight: 500;">Home</span>
+                </div>
+                <div class="col" id="cart"
+                    style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                    <ion-icon name="cart-outline" class="fs-2"></ion-icon>
+                    <span style="font-size: 13px; font-weight: 500;">Cart</span>
+                </div>
+                <div class="col"
+                    style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                    <ion-icon name="notifications-outline" class="fs-2"></ion-icon>
+                    <span style="font-size: 13px; font-weight: 500;">News</span>
+                </div>
+                <div class="col"
+                    style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                    <ion-icon name="person-outline" class="fs-2"></ion-icon>
+                    <span style="font-size: 13px; font-weight: 500;">Profile</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        let products = document.querySelectorAll(".products");
+        products.forEach((product) => {
+            product.addEventListener("click", () => {
+                window.location.href = '../viewProducts'
+            })
+        });
+    </script>
+</body>
+
+</html>

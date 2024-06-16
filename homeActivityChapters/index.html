@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Vendor CSS Files -->
+  <!-- <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="../assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/simple-datatables/style.css" rel="stylesheet"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<style>
+
+</style>
+
+<body>
+  <div class="container-fluid bg-light" style="height: 92vh;">
+
+    <div class="row p-1">
+      <div class="mt-2">
+
+        <div class="mb-2" id="chapter1">
+          <span type="button" class="form-control p-2" id="chapters"
+            style="border: 1px solid blue; border-radius: 12px; display: flex; align-items: center;">
+            <div class="chapterLogo"
+              style="height: 40px; width: 14%; background-color: beige; border-radius: 50px; display: flex; justify-content: center; align-items: center;">
+              1
+            </div>
+            <div class="chapterName ms-4 fw-bold">
+              Chapter 1
+            </div>
+          </span>
+        </div>
+
+        <script>
+          let chapter1 = document.querySelector("#chapter1");
+          chapter1.onclick = () => {
+            let chapterName = chapter1.innerText,
+              url = '../chapters/chapter1.html?chapterName=' + encodeURIComponent(chapterName);
+            // alert(chapterName);
+            window.location.href = url;
+          };
+        </script>
+
+        <div class="mb-2" id="chapter2">
+          <span type="button" class="form-control p-2" id="chapters"
+            style="border: 1px solid blue; border-radius: 12px; display: flex; align-items: center;">
+            <div class="chapterLogo"
+              style="height: 40px; width: 14%; background-color: beige; border-radius: 50px; display: flex; justify-content: center; align-items: center;">
+              2
+            </div>
+            <div class="chapterName ms-4 fw-bold" id="chapterName2" value="chapter2">
+              Chapter 2
+            </div>
+          </span>
+        </div>
+        <script>
+          let chapter2 = document.querySelector("#chapter2");
+          chapter2.onclick = () => {
+              url = '../chapters/chapter2.html';
+            window.location.href = url;
+          };
+        </script>
+
+        <div class="mb-2" id="chapter3">
+          <span type="button" class="form-control p-2" id="chapters"
+            style="border: 1px solid blue; border-radius: 12px; display: flex; align-items: center;">
+            <div class="chapterLogo"
+              style="height: 40px; width: 14%; background-color: beige; border-radius: 50px; display: flex; justify-content: center; align-items: center;">
+              3
+            </div>
+            <div class="chapterName ms-4 fw-bold">
+              Chapter 3
+            </div>
+          </span>
+        </div>
+        <script>
+          let chapter3 = document.querySelector("#chapter3");
+          chapter3.onclick = () => {
+              url = '../chapters/chapter3.html';
+            window.location.href = url;
+          };
+        </script>
+
+        <div class="mb-2" id="chapter4">
+          <span type="button" class="form-control p-2" id="chapters"
+            style="border: 1px solid blue; border-radius: 12px; display: flex; align-items: center;">
+            <div class="chapterLogo"
+              style="height: 40px; width: 14%; background-color: beige; border-radius: 50px; display: flex; justify-content: center; align-items: center;">
+              4
+            </div>
+            <div class="chapterName ms-4">
+              Chapter 4
+            </div>
+          </span>
+        </div>
+        <script>
+          let chapter4 = document.querySelector("#chapter4");
+          chapter4.onclick = () => {
+              url = '../chapters/chapter4.html';
+            window.location.href = url;
+          };
+        </script>
+
+        <div class="mb-2" id="chapter5">
+          <span type="button" class="form-control p-2" id="chapters"
+            style="border: 1px solid blue; border-radius: 12px; display: flex; align-items: center;">
+            <div class="chapterLogo"
+              style="height: 40px; width: 14%; background-color: beige; border-radius: 50px; display: flex; justify-content: center; align-items: center;">
+              5
+            </div>
+            <div class="chapterName ms-4">
+              Chapter 5
+            </div>
+          </span>
+        </div>
+        <script>
+          let chapter5 = document.querySelector("#chapter5");
+          chapter5.onclick = () => {
+              url = '../chapters/chapter5.html';
+            window.location.href = url;
+          };
+        </script>
+
+        <div class="mb-2" id="chapter6">
+          <span type="button" class="form-control p-2" id="chapters"
+            style="border: 1px solid blue; border-radius: 12px; display: flex; align-items: center;">
+            <div class="chapterLogo"
+              style="height: 40px; width: 14%; background-color: beige; border-radius: 50px; display: flex; justify-content: center; align-items: center;">
+              6
+            </div>
+            <div class="chapterName ms-4">
+              Chapter 6
+            </div>
+          </span>
+        </div>
+        <script>
+          let chapter6 = document.querySelector("#chapter6");
+          chapter6.onclick = () => {
+              url = '../chapters/chapter6.html';
+            window.location.href = url;
+          };
+        </script>
+
+        <div class="mb-2" id="chapter7">
+          <span type="button" class="form-control p-2" id="chapters"
+            style="border: 1px solid blue; border-radius: 12px; display: flex; align-items: center;">
+            <div class="chapterLogo"
+              style="height: 40px; width: 14%; background-color: beige; border-radius: 50px; display: flex; justify-content: center; align-items: center;">
+              7
+            </div>
+            <div class="chapterName ms-4">
+              Chapter 7
+            </div>
+          </span>
+        </div>
+        <script>
+          let chapter7 = document.querySelector("#chapter7");
+          chapter7.onclick = () => {
+              url = '../chapters/chapter7.html';
+            window.location.href = url;
+          };
+        </script>
+
+        <div class="mb-2" id="chapter8">
+          <span type="button" class="form-control p-2" id="chapters"
+            style="border: 1px solid blue; border-radius: 12px; display: flex; align-items: center;">
+            <div class="chapterLogo"
+              style="height: 40px; width: 14%; background-color: beige; border-radius: 50px; display: flex; justify-content: center; align-items: center;">
+              8
+            </div>
+            <div class="chapterName ms-4">
+              Chapter 8
+            </div>
+          </span>
+        </div>
+        <script>
+          let chapter8 = document.querySelector("#chapter8");
+          chapter8.onclick = () => {
+              url = '../chapters/chapter8.html';
+            window.location.href = url;
+          };
+        </script>
+
+        <div class="mb-2" id="chapter9">
+          <span type="button" class="form-control p-2" id="chapters"
+            style="border: 1px solid blue; border-radius: 12px; display: flex; align-items: center;">
+            <div class="chapterLogo"
+              style="height: 40px; width: 14%; background-color: beige; border-radius: 50px; display: flex; justify-content: center; align-items: center;">
+              9
+            </div>
+            <div class="chapterName ms-4">
+              Chapter 9
+            </div>
+          </span>
+        </div>
+        <script>
+          let chapter9 = document.querySelector("#chapter9");
+          chapter9.onclick = () => {
+              url = '../chapters/chapter9.html';
+            window.location.href = url;
+          };
+        </script>
+
+        <div class="mb-2">
+          <span type="button" class="form-control p-2" id="chapters"
+            style="border: 1px solid blue; border-radius: 12px; display: flex; align-items: center;">
+            <div class="chapterLogo"
+              style="height: 40px; width: 14%; background-color: beige; border-radius: 50px; display: flex; justify-content: center; align-items: center;">
+              1
+            </div>
+            <div class="chapterName ms-4">
+              Chapter 1
+            </div>
+          </span>
+        </div>
+
+        <div class="mb-2">
+          <span type="button" class="form-control p-2" id="chapters"
+            style="border: 1px solid blue; border-radius: 12px; display: flex; align-items: center;">
+            <div class="chapterLogo"
+              style="height: 40px; width: 14%; background-color: beige; border-radius: 50px; display: flex; justify-content: center; align-items: center;">
+              1
+            </div>
+            <div class="chapterName ms-4">
+              Chapter 1
+            </div>
+          </span>
+        </div>
+
+        <div class="mb-2">
+          <span type="button" class="form-control p-2" id="chapters"
+            style="border: 1px solid blue; border-radius: 12px; display: flex; align-items: center;">
+            <div class="chapterLogo"
+              style="height: 40px; width: 14%; background-color: beige; border-radius: 50px; display: flex; justify-content: center; align-items: center;">
+              1
+            </div>
+            <div class="chapterName ms-4">
+              Chapter 1
+            </div>
+          </span>
+        </div>
+
+        <div class="mb-2">
+          <span type="button" class="form-control p-2" id="chapters"
+            style="border: 1px solid blue; border-radius: 12px; display: flex; align-items: center;">
+            <div class="chapterLogo"
+              style="height: 40px; width: 14%; background-color: beige; border-radius: 50px; display: flex; justify-content: center; align-items: center;">
+              1
+            </div>
+            <div class="chapterName ms-4">
+              Chapter 1
+            </div>
+          </span>
+        </div>
+
+        <div class="mb-2">
+          <span type="button" class="form-control p-2" id="chapters"
+            style="border: 1px solid blue; border-radius: 12px; display: flex; align-items: center;">
+            <div class="chapterLogo"
+              style="height: 40px; width: 14%; background-color: beige; border-radius: 50px; display: flex; justify-content: center; align-items: center;">
+              1
+            </div>
+            <div class="chapterName ms-4">
+              Chapter 1
+            </div>
+          </span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="../main.js"></script>
+</body>
+
+</html>
