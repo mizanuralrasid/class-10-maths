@@ -1,0 +1,10 @@
+.exercise{
+    height:0; 
+    background-color: rgb(244, 238, 238); 
+    border-radius: 6px; 
+    align-items: center; 
+    display: none;
+    transition: all 0.4s;
+    position: relative;
+    overflow: hidden;
+}
