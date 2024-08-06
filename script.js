@@ -127,14 +127,8 @@ let ex16 = document.querySelector(".ex16");
 
     chapter7.addEventListener("click",()=>{
         let ex7 = document.querySelector(".ex7");
-        if (ex7.style.height === "0px") {
-            ex7.style.height = "250px";
-            console.log("extend");
-        }
-        else{
-            ex7.style.height = "0px";
-            console.log("close");
-        }
+        
+        window.location.href = 'chapters/chapter7/'
     })
 
 
