@@ -132,31 +132,34 @@ let ex16 = document.querySelector(".ex16");
     })
 
 
-    chapter8.addEventListener("click",()=>{
+        chapter8.addEventListener("click",()=>{
         let ex8 = document.querySelector(".ex8");
-        if (ex8.style.height === "0px") {
-            ex8.style.height = "250px";
-            console.log("extend");
-        }
-        else{
-            ex8.style.height = "0px";
-            console.log("close");
-        }
+        // let chNo = document.getElementById("#chNo").value;
+        // sessionStorage.setItem("chapterNo", chNo);
+        // if (ex8.style.height === "0px") {
+        //     ex8.style.height = "250px";
+        //     console.log("extend");
+        // }
+        // else{
+        //     ex8.style.height = "0px";
+        //     console.log("close");
+        // }
+        window.location.href = 'chapters/chapter8/index.html?8'
     })
 
 
     chapter9.addEventListener("click",()=>{
         let ex9 = document.querySelector(".ex9");
-        if (ex9.style.height === "0px") {
-            ex9.style.height = "250px";
-            console.log("extend");
-        }
-        else{
-            ex9.style.height = "0px";
-            console.log("close");
-        }
+        // if (ex9.style.height === "0px") {
+        //     ex9.style.height = "250px";
+        //     console.log("extend");
+        // }
+        // else{
+        //     ex9.style.height = "0px";
+        //     console.log("close");
+        // }
+        window.location.href = 'chapters/chapter9/index.html?9'
     })
-
 
     chapter10.addEventListener("click",()=>{
         let ex10 = document.querySelector(".ex10");
